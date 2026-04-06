@@ -1,0 +1,8 @@
+{
+  "name": "未来主理人计划：AI 智慧 4S 门店",
+  "description": "高规格商战沙盘模拟系统，用 AI 驱动汽车智慧 4S 门店决策。",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
