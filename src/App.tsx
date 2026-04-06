@@ -33,6 +33,7 @@ import ScoringPanel from './components/ScoringPanel';
 import WelcomePage from './components/WelcomePage';
 import TeamSetupPage from './components/TeamSetupPage';
 import CleaningFunnelPage from './components/CleaningFunnelPage';
+import CDPProfilePage from './components/CDPProfilePage';
 import OutboundMonitorPage from './components/OutboundMonitorPage';
 import ShowroomRadarPage from './components/ShowroomRadarPage';
 import DecisionMakerPage from './components/DecisionMakerPage';
@@ -43,6 +44,7 @@ export type PageId =
   | 'welcome' 
   | 'team-setup'
   | 'cleaning' 
+  | 'cdp'
   | 'outbound' 
   | 'showroom' 
   | 'decision' 
@@ -80,7 +82,8 @@ export default function App() {
     switch (currentPage) {
       case 'welcome': return <WelcomePage onNext={() => setCurrentPage('team-setup')} />;
       case 'team-setup': return <TeamSetupPage groups={groups} setGroups={setGroups} onNext={() => setCurrentPage('cleaning')} />;
-      case 'cleaning': return <CleaningFunnelPage onNext={() => setCurrentPage('outbound')} />;
+      case 'cleaning': return <CleaningFunnelPage onNext={() => setCurrentPage('cdp')} />;
+      case 'cdp': return <CDPProfilePage onNext={() => setCurrentPage('outbound')} />;
       case 'outbound': return <OutboundMonitorPage onNext={() => setCurrentPage('showroom')} />;
       case 'showroom': return <ShowroomRadarPage onNext={() => setCurrentPage('decision')} />;
       case 'decision': return <DecisionMakerPage onNext={() => setCurrentPage('prompt')} />;

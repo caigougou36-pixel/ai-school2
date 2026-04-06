@@ -22,6 +22,7 @@ const MENU_ITEMS: { id: PageId; label: string; icon: React.ReactNode; color: str
   { id: 'welcome', label: '欢迎', icon: <Home size={20} />, color: 'text-blue-400' },
   { id: 'team-setup', label: '小组', icon: <Users size={20} />, color: 'text-purple-400' },
   { id: 'cleaning', label: '清洗', icon: <Database size={20} />, color: 'text-green-400' },
+  { id: 'cdp', label: '画像', icon: <Users size={20} />, color: 'text-indigo-400' },
   { id: 'outbound', label: '外呼', icon: <PhoneCall size={20} />, color: 'text-orange-400' },
   { id: 'showroom', label: '展厅', icon: <Eye size={20} />, color: 'text-red-400' },
   { id: 'decision', label: '决策', icon: <Zap size={20} />, color: 'text-yellow-400' },
